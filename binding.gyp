@@ -56,8 +56,8 @@
 					"OZW_DOC"         : "<!(PKG_CONFIG_PATH=<(PKG_CONFIG_PATH) pkg-config --variable=docdir libopenzwave)"
 				},
         		"defines": [
-					"OPENZWAVE_ETC=<!@(node -p -e \"'<(OZW_ETC)'.length ? '<(OZW_ETC)' : '/usr/local/etc/openzwave'\")",
-					"OPENZWAVE_DOC=<!@(node -p -e \"'<(OZW_DOC)'.length ? '<(OZW_DOC)' : '/usr/local/share/doc/openzwave'\")",
+					"OPENZWAVE_ETC='/usr/etc/openzwave'",
+					"OPENZWAVE_DOC='/usr/share/doc/openzwave'",
 					"OPENZWAVE_SECURITY=1"
         		],
 				"link_settings": {
@@ -65,8 +65,8 @@
 				},
 				"include_dirs": [
 					"<!(node -p -e \"require('path').dirname(require.resolve('nan'))\")",
-					"<(OZW_INC)",
-					"<(OZW_INC)/value_classes"
+					"/usr/include/openzwave",
+					"/usr/include/openzwave/value_classes"
 				],
 				"cflags": [ "-Wno-ignored-qualifiers -Wno-write-strings -Wno-unknown-pragmas" ],
 			}],
