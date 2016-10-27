@@ -56,7 +56,8 @@
 					"libraries": ["-lopenzwave"]
 				},
 				"include_dirs": [
-					"<!(node -p -e \"require('path').dirname(require.resolve('nan'))\")"
+					"<!(node -p -e \"require('path').dirname(require.resolve('nan'))\")",
+					"/usr/include/openzwave"
 				],
 				"cflags": [ "-Wno-ignored-qualifiers -Wno-write-strings -Wno-unknown-pragmas" ],
 			}],
