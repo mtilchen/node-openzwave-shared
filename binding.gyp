@@ -27,7 +27,7 @@
         		"defines": [
 					"OPENZWAVE_ETC=<(OZW_ETC)/config",
 					"OPENZWAVE_DOC=<!@(node -p -e \"'<(OZW_DOC)'.length ? '<(OZW_DOC)' : '/usr/local/share/doc/openzwave'\")",
-					"OPENZWAVE_SECURITY=<!@(find <(OZW_INC) -name ZWSecurity.h | wc -l)"
+					"OPENZWAVE_SECURITY=1"
         		],
 				"link_settings": {
 				    "libraries": [
