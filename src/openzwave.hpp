@@ -27,11 +27,11 @@
 #include "nan.h"
 
 #include <openzwave/Manager.h>
-#include "Driver.h"
-#include "Node.h"
-#include "Notification.h"
-#include "Options.h"
-#include "Value.h"
+#include <openzwave/Driver.h>
+#include <openzwave/Node.h>
+#include <openzwave/Notification.h>
+#include <openzwave/Options.h>
+#include <openzwave/Value.h>
 
 #if defined(_WIN32) || defined( __APPLE__)
     #include <unordered_map>
