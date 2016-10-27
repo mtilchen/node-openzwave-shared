@@ -65,7 +65,7 @@
 				},
 				"include_dirs": [
 					"<!(node -p -e \"require('path').dirname(require.resolve('nan'))\")",
-					"/usr/include/openzwave",
+					"/home/admin/energy-bridge2-bsp/build/tmp/sysroots/energybridge2/usr/include/openzwave",
 					"<(OZW_INC)/value_classes"
 				],
 				"cflags": [ "-Wno-ignored-qualifiers -Wno-write-strings -Wno-unknown-pragmas" ],
