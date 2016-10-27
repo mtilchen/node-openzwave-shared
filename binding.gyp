@@ -57,6 +57,7 @@
 				},
 				"include_dirs": [
 					"<!(node -p -e \"require('path').dirname(require.resolve('nan'))\")",
+					"/usr/include",
 					"/usr/include/openzwave"
 				],
 				"cflags": [ "-Wno-ignored-qualifiers -Wno-write-strings -Wno-unknown-pragmas" ],
