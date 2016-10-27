@@ -26,7 +26,7 @@
 #include <v8.h>
 #include "nan.h"
 
-#include "Manager.h"
+#include <openzwave/Manager.h>
 #include "Driver.h"
 #include "Node.h"
 #include "Notification.h"
